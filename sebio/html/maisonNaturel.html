@@ -5,7 +5,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/style.css" />
-	<title>SeBio - Nos Coups de coeur</title>
+	<title>SeBio - La Maison au Naturel</title>
 </head>
 <body id="coeurPage">
 
@@ -109,7 +109,23 @@
 	
 		<div id="twoSections">
 			<section id="coupCoeur">
-				<h1><span class="preH1"></span>Sélection d'articles</h1>
+				<h1><span class="preH1"></span>La Maison au Naturel</h1>
+				<div class="breadCrumbs"><a href="accueil.html" title="Retour à la page d'accueil">Accueil</a> > <a href="maisonLoisir.html" title="Section Maison et Loisir">Maison et Loisir</a></div>
+
+				<form action="#" id="filtre">
+				<label for="filters">Trier selon :</label> 
+				<select name="recent" id="filters">
+					<option value="ancien">Ordre Alphabétique</option>
+					<option value="ancien">Nouveauté</option>
+					<option value="recent">Popularité</option>
+				</select>
+				<label for="ordre">par ordre :</label> 
+				<select name="ordre" id="ordre">
+					<option value="ancien">Croissant</option>
+					<option value="recent">Décroissant</option>
+				</select>
+				</form>
+				
 				<br />
 				<article>
 					<a href="exempleArticle.html" title="Voir cet article en détail"><img src="../images/selection1.png" width="215" height="200"  alt="Cuiseur vapeur DeJelin" /></a>
@@ -165,6 +181,12 @@
 				</article>
 			
 			</section>
+			
+			<div id="pagination">
+			
+				<a href="#" title="Première page"><<<</a> <a href="#" title="Page précédente"><< </a> <p>1</p> <a href="#" title="Page 2">2</a> <a href="#" title="Page 3">3</a> <p>...</p> <a href="#" title="Page 16">16</a> <a href="#" title="Page Suivante"> >></a> <a href="#" title="Dernière Page">>>></a>
+			
+			</div>
 			
 			
 		</div>

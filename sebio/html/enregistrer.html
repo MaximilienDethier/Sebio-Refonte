@@ -5,9 +5,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/style.css" />
-	<title>SeBio - Enfants et Futures Mamans</title>
+	<title>SeBio - Produits naturels, bio et écologiques pour toute la famille</title>
 </head>
-<body id="coeurPage">
+<body id="decoMode" class="enregistrerPage">
 
 	<header>
 		<div id="containerHeader">
@@ -16,12 +16,23 @@
 		
 			<div id="cartBox">
 			
-				<a id="cart" title="Consultez les articles dans votre panier" href="payer.html"><div><p>1</p></div> <p>Payer</p></a>
+				<div id="welcomeBox">
+					<h2>Bienvenue&nbsp;!</h2>
+					
+					<p>Envie d'une vie plus saine, et plus respectueuse de l'environnement&nbsp;?</p>
+	
+				</div>
 				
 				<div id="floatRightCart">
-					<p>Bonjour, <a href="#" title="Voir votre profil">Maximilien&nbsp;!</a></p>
-					<p>Il y a <a href="votrePanier.html" title="Voir les articles dans votre panier">1 article</a> dans votre panier.</p>
-					<a href="deconnecte.html" id="actionCart" title="Déconnectez-vous">Déconnection</a></div>
+					<form action="accueil.html">
+						<label for="pseudo">Pseudo</label>
+						<input type="text" id="pseudo" />
+						<label for="pswd">Mot de Passe</label>
+						<input type="password" id="pswd" />
+		
+						<input type="submit" value="Connectez-vous" />
+					</form>
+				</div>
 			
 			</div>
 
@@ -30,7 +41,7 @@
 				<ul>
 				
 					<li>
-						<a href="accueil.html" title="Retour à l'accueil" id="home">Accueil</a>
+						<a href="accueil.html" title="Retour à l'accueil" id="home" class="activeButton">Accueil</a>
 					</li>
 					
 					<li>
@@ -68,7 +79,7 @@
 					</li>
 					
 					<li>
-						<a href="enfantFutureMaman.html" class="activeButton" title="De tout pour les (futures) mamans et leurs enfants" id="enfant">Enfants & Futures Mamans</a>
+						<a href="enfantFutureMaman.html" title="De tout pour les (futures) mamans et leurs enfants" id="enfant">Enfants & Futures Mamans</a>
 						<ul>
 							<span class="triangle"></span>
 							<a href="enfantFutureMaman.html" title="De tout pour les (futures) mamans et leurs enfants"><h1>Enfance</h1></a>
@@ -102,42 +113,30 @@
 	
 	<div id="mainContent">
 	
-		<form action="#" id="search">
-			<input type="search" placeholder="Entrez l'objet que vous recherchez" />
-			<input type="submit" value="Recherche" />
-		</form>
+		<div id="twoSections">
+
+			<h1><span class="preH1"></span>Enregistrez-vous</h1>
+		
+			<form id="registerForm" action="accueil.html">
+					
+					<label for="pseudo">Pseudo&nbsp;:</label>
+					<input type="text" id="pseudo" /> <br />
+					<label for="email">Email&nbsp;:</label>
+					<input type="text" id="email" /> <br />
+					<label for="pswd">Mot de Passe&nbsp;:</label>
+					<input type="password" id="pswd" /><br />
+					<label for="pswd2">Confirmez le mot de passe&nbsp;:</label>
+					<input id="pswd2" type="password" /><br />
 	
-		<div id="twoSections" class="sectionGenerale">
+					<input id="registerButton" type="submit" value="Enregistrez-vous" />
+			</form>
+		
+			<p id="registerMessage">Enregistrez-vous pour profiter de toutes nos offres&nbsp;!<br /><br />
+			Une fois enregistré, n'oubliez pas de remplir votre profil et d'enregistrer votre carte bancaire,
+			pour un paiement plus simple et plus rapide.</p>
 			
-			<h1><span class="preH1"></span>Enfance</h1>
-			
-			<a href="maisonNaturel.html" title="Découvrez nos fournitures scolaires et notre papier" class="sousSections">
-				<img src="../images/papeterie.jpg" alt="Papier, fournitures scolaires, ..." width="90" height="90" />
-				<h2>Papeterie</h2>
-				<p>Tout pour les fournitures scolaires de vos enfants.<br />
-				Crayons, papier recyclés, en route pour une rentrée plus écologique&nbsp;!</p>
-				<div class="clearBoth"></div>
-			</a>
-			<a href="maisonNaturel.html" title="Découvrez nos livres en papier recyclé" class="sousSections">
-				<img src="../images/livre.jpg" alt="Livres bios sur des sujets bios !" width="90" height="90"  />
-				<h2>Livres</h2>
-				<p>Des livres en papier recyclé de très grande qualité.<br />
-				Apprenez à cuisiner, prendre soin de votre peau, bref, à vivre mieux&nbsp;!</p>
-				<div class="clearBoth"></div>
-			</a>
-			<a href="maisonNaturel.html" title="Nos articles pour votre maison !" class="sousSections">
-				<img src="../images/maisonBio.jpg" alt="La Maison au Naturel" width="90" height="90"  />
-				<h2>La Maison au Naturel</h2>
-				<p>Des envies déco pour une maison plus saine&nbsp;? C'est par ici&nbsp;!</p>
-				<div class="clearBoth"></div>
-			</a>
-			<a href="maisonNaturel.html" title="Entretenez votre maison en toute sécurité !" class="sousSections">
-				<img src="../images/entretien.jpg" alt="Produit d'entretien biologique" width="90" height="90"  />
-				<h2>Produits d'Entretien Biologiques</h2>
-				<p>Pour entretenir votre maison sans produit nocif pour l'environnement, et pour votre santé&nbsp;!</p>
-				<div class="clearBoth"></div>
-			</a>
-			
+			<div class="clearBoth"></div>
+		
 		</div>
 	
 	</div>

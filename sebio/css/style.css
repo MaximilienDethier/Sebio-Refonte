@@ -517,11 +517,11 @@ top:30px;
 	
 	#search input:first-child
 	{
-	margin-right:18px;
-	width:310px;
+	margin-right:10px;
+	width:300px;
 	}
 	
-	#search input+input
+	#search input+input, #decoMode label+input+input, #registerButton
 	{
 	border:0px solid black;
 	font-size:16px;
@@ -537,7 +537,7 @@ top:30px;
 	border-radius: 7px;
 	}
 
-	#search input+input:hover	
+	#search input+input:hover, #decoMode label+input+input:hover, #registerButton:hover
 	{
 	background-color:#75B41B;
 	}
@@ -1275,7 +1275,152 @@ margin-bottom:50px;
 	padding:10px;
 	display:inline-block;
 	}
+	
+	#filtre , #filtre select
+	{
+	color:#5D9015;
+	}
+	
+	#filters
+	{
+	margin-right:10px;
+	}
+	
+	#pagination 
+	{
+	font-size:18px;
+	float:right;
+	position:relative;
+	top:-20px;
+	}
+	
+	#pagination *
+	{
+	display:inline-block;
+	}
 
+/*Mode Hors Ligne*/
+
+#decoMode #containerHeader
+{
+position:relative;
+}
+
+#decoMode #cartBox
+{
+position:absolute;
+top:20px;
+right:20px;
+max-width:380px;
+}
+
+	#decoMode #cartBox input, #decoMode #cartBox label
+	{
+	font-size:14.5px;
+	font-family:"Open Sans", Arial;
+	margin-bottom:12px;
+	}
+
+	#decoMode #cartBox label+input+input
+	{
+	width:140px;
+	}
+	
+	#decoMode #floatRightCart, #welcomeBox
+	{
+	float:left;
+	width:40%;
+	}
+	
+	#welcomeBox
+	{
+	width:50%;
+	margin-right:3px;
+	}
+	
+		#welcomeBox  h2
+		{
+		font-size:21px;
+		color: #75b41b;
+		margin-bottom:15px;
+		font-family: 'Merienda', cursive;
+		}
+		
+		.enregistrerPage #welcomeBox h1
+		{
+		margin-left:26px;
+		margin-bottom:15px;
+		}
+
+.enregistrerPage h1
+{
+position:relative;
+top:20px;
+margin-bottom:40px;
+}
+
+.enregistrerPage .clearBoth
+{
+margin-bottom:70px;
+}
+
+.enregistrerPage #twoSections
+{
+width:100%;
+max-width:1000px;
+}
+	
+#registerForm , #registerMessage
+{
+color:#555554;
+float:left;
+}
+	#registerMessage
+	{
+	margin-top:15px;
+	margin-bottom:60px;
+	width:40%;
+	min-width:320px;
+	padding-left:20px;
+	display:block;
+	border-left:1px dashed #cfd3b4;
+	}
+	
+	#registerForm 
+	{
+	float:left;
+	width:420px;
+	position:relative;
+	left:-20px;
+	margin-top:15px;
+	margin-bottom:10px;
+	}
+	
+	#registerForm label
+	{
+	margin-right:10px;
+	width:195px;
+	display:inline-block;
+	text-align:right;
+	padding-bottom:5px;
+	}
+
+	#registerForm input
+	{
+	width:200px;
+	margin-top:2px;
+	margin-bottom:2px;
+	}
+
+	input#registerButton
+	{
+	width:150px;
+	margin-top:15px;
+	margin-bottom:35px;
+	position:relative;
+	left:253px;
+	}
+	
 /*Adaptations Mediaqueries*/
 
 @media only screen and (max-width : 1040px) and (min-width : 1000px){
@@ -1465,13 +1610,38 @@ margin-bottom:50px;
 
 }
 
+@media only screen and (max-width : 720px){
+
+#decoMode nav
+{
+float:left;
+position:absolute;
+top:190px;
+}
+
+#decoMode #cartBox
+{
+margin-top:30px;
+position:relative;
+left:0;
+float:left;
+clear:both;
+margin-bottom:10px;
+}
+
+#cartBox input
+{
+width:140px;
+}
+
+}
 
 
 @media only screen and (max-width : 787px) and (min-width : 585px){
 
 	#twoSections
 	{
-	width:240px;
+	width:280px;
 	}
 
 }
@@ -1496,7 +1666,7 @@ display:none;
 #addCart table td, #addCart table tr
 {
 display:block;
-border:0px solid black;
+border:0 solid black;
 }
 
 }
@@ -1531,6 +1701,16 @@ display:block;
 border:0px solid black;
 }
 
+}
+
+@media only screen and (max-width : 818px)
+{
+#registerMessage
+{
+position:relative;
+left:-30px;
+top:-10px;
+}
 }
 
 @media only screen and (max-width : 770px) and (min-width : 585px){
@@ -1588,6 +1768,12 @@ padding:4px 10px;
 	margin:auto;
 	}
 	
+	#registerMessage
+	{
+	position:relative;
+	left:-30px;
+	}
+	
 	#addToCart #mainContent, #seeCart #mainContent
 	{
 	margin-left:0;
@@ -1613,6 +1799,12 @@ padding:4px 10px;
 	header
 	{
 	height:auto;
+	min-height:280px;
+	}
+	
+	#decoMode #cartBox
+	{
+	width:320px;
 	}
 
 	nav>ul>li
@@ -1832,6 +2024,45 @@ padding:4px 10px;
 	footer a+a
 	{
 	margin-top:10px;
+	}
+	
+		#decoMode nav
+		{
+		clear:both;
+		position:relative;
+		top:0;
+		margin-top:20px;
+		}
+		
+		#decoMode #cartBox
+		{
+		width:80%;
+		top:0;
+		min-width:320px;
+		}
+		
+		#decoMode #containerHeader
+		{
+		clear:both;
+		}
+		
+	#registerForm label
+	{
+	padding:0;
+	margin-bottom:1px;
+	display:block;
+	text-align:left;
+	}
+	
+	#registerForm input
+	{
+	margin-bottom:10px;
+	}
+	
+	input#registerButton
+	{
+	left:0;
+	top:-10px;
 	}
 
 }
