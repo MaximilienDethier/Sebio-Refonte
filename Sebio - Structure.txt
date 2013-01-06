@@ -1,28 +1,10 @@
--Navigation:
-
-*Accueil
-
-*Bons Plans
-*Enfants
- *Future Maman
-*Maison & Loisir
-*Mode
-*Santé et Nature
-
-(Menus déroulants)
-
-Grille
-
-___ Annonces légales, conditions ==>> relégué dans le footer ___
-
-
 >>Bons Plans:
 
 Nouveautés
 Articles en LIQUIDATION !
 Chèques Cadeau
 
->> Future Maman
+>> Enfants & Futures Mamans
 
 Grossesse et allaitement
 Listes de Naissance

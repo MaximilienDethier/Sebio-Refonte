@@ -1,0 +1,579 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Accueil */
+
+/* --- Accueil - General */
+
+html
+{
+background-color: #e7ebc8;
+font-family:"Times New Roman",Georgia,Serif;
+}
+
+#containerHeader, #mainContent, #mentionsLegales
+{
+padding:20px;
+width:980px;
+margin:auto;
+}
+
+#mainContent
+{
+paddig-bottom:0px;
+}
+
+a
+{
+color:#75b41b;
+text-decoration:none;
+}
+
+	a:hover
+	{
+	color:#8adc16;
+	text-decoration:underline;
+	}
+	
+strong
+{
+font-weight:bold;
+}
+	
+/* --- Accueil - Menu */
+
+#containerHeader img
+{
+margin-left:20px;
+}
+
+#mainContent
+{
+margin-top:-15px;
+}
+
+nav>ul>li
+{
+display:inline-block;
+width:106px;
+margin-left:26px;
+margin-right:26px;
+}
+
+nav>ul>li>a
+{
+text-indent:-9999px;
+display:inline-block;
+width:106px;
+height:106px;
+background-image:url("../images/buttons.png");
+}
+
+nav>ul>li>ul
+{
+display:none;
+position:relative;
+border-radius: 10px; 
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px; 
+border: 0px solid #800000;
+background-image:url("../images/backgroundTitle.png");
+padding:20px;
+line-height:120%;
+z-index:4;
+
+}
+
+nav>ul>li>ul>li
+{
+display:block;
+font-size:17px;
+margin-bottom:6px;
+}
+
+
+.triangle
+{
+position:relative;
+top:-40px;
+left:17px;
+width:30px;
+height:27px;
+background-image:url("../images/iconset.png");
+background-position:-30px -5px;
+}
+
+.triangle+a>h1
+{
+color:white;
+letter-spacing:0px;
+position:relative;
+top:-28px;
+left:0px;
+font-size:20px;
+margin-bottom:-2px;
+
+-webkit-transition: all 0.4s ;
+-moz-transition: all 0.4s ;
+-ms-transition: all 0.4s ;
+-o-transition: all 0.4s ;
+transition: all 0.4s ;
+}
+
+.triangle+a>h1:hover
+{
+text-decoration:none;
+left:6px;
+-webkit-transition: all 0.4s ;
+-moz-transition: all 0.4s ;
+-ms-transition: all 0.4s ;
+-o-transition: all 0.4s ;
+transition: all 0.4s ;
+}
+
+nav>ul>li:hover>ul
+{
+display:block;
+position:absolute;
+}
+
+	#home
+	{
+	background-position:-6px -2px;
+	position:relative;
+	top:-10px;
+	}
+	
+		#home:hover, #home.activeButton
+		{
+		background-position: -6px -124px;
+		}
+		
+	#bonsPlans
+	{
+	position:relative;
+	top:-8px;
+	background-position:-122px -2px;
+	}
+	
+		#bonsPlans:hover, #bonsPlans.activeButton
+		{
+		background-position: -122px -124px;
+		}
+
+	#habits
+	{
+	position:relative;
+	top:14px;
+	background-position:-236px -2px;
+	}
+	
+		#habits+ul
+		{
+		margin-top:16px;
+		}
+
+		#habits:hover, #habits.activeButton
+		{
+		background-position: -236px -124px;
+		}
+		
+	#maison
+	{
+	position:relative;
+	top:30px;
+	background-position:-350px -2px;
+	}
+	
+		#maison+ul
+		{
+		margin-top:32px;
+		}
+	
+		#maison:hover, #maison.activeButton
+		{
+		background-position: -350px -124px;
+		}
+		
+	#sante
+	{
+	position:relative;
+	top:32px;
+	background-position:-466px -2px;
+	}
+	
+		#sante+ul
+		{
+		margin-top:34px;
+		}
+	
+		#sante:hover, #sante.activeButton
+		{
+		background-position: -466px -124px;
+		}
+		
+	#enfant
+	{
+	position:relative;
+	top:23px;
+	background-position:-581px -2px;
+	}
+	
+		#enfant+ul
+		{
+		margin-top:27px;
+		}
+	
+		#enfant:hover, #enfant.activeButton
+		{
+		background-position: -581px -124px;
+		}
+
+/* --- Accueil - Détails */
+
+footer
+{
+margin-top:-70px;
+height:177px;
+width:100%;
+background-image:url("../images/backFooter.png");
+background-position:center;
+background-repeat:no-repeat;
+}
+
+header
+{
+height:313px;
+width:100%;
+background-image:url("../images/backHeader.png");
+background-position:center;
+background-repeat:no-repeat;
+}
+
+a.titleLink:hover
+{
+text-decoration:none;
+}
+
+	a.titleLink:hover h1
+	{
+	color:#8adc16;
+	}
+
+#cartBox
+{
+float:right;
+}
+	
+#paiement
+{
+padding:20px;
+width:180px;
+color:white;
+line-height:115%;
+background-color:#75b41b;
+display:inline-block;
+
+position:relative;
+top:40px;
+}
+
+	#paiement li
+	{
+	margin-bottom:20px;
+	}
+	
+h1
+{
+font-size:26px;
+color: #75b41b;
+margin-bottom:10px;
+font-family: 'Merienda', cursive;
+
+position:relative;
+right:28px;
+}
+
+h1 .preH1
+{
+display:inline-block;
+position:relative;
+top:7px;
+right:1px;
+width:27px;
+height:22px;
+background-image:url("../images/iconset.png");
+}
+
+	#paiement h1
+	{
+	color:white;
+	font-size:20px;
+	right:0px;
+	}
+	
+	.right
+	{
+	float:right;
+	padding-bottom:20px;
+	}
+	
+	#paiement h2
+	{
+	clear:both;
+	color:white;
+	font-family: 'Merienda', cursive;
+	
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+	
+#twoSections
+{
+vertical-align:top;
+max-width:720px;
+margin-left:20px;
+display:inline-block;
+}
+
+#coupCoeur article, #selection article
+{
+width:216px;
+vertical-align:top;
+display:inline-block;
+margin-right:20px;
+margin-top:5px;
+}
+
+#selection article
+{
+margin-bottom:0px;
+}
+
+	article img
+	{
+	border:2px solid #75b41b;
+	margin-bottom:10px;
+	}
+	
+	article a:hover img
+	{
+	border:2px solid #8adc16;
+	margin-bottom:10px;
+	}
+	
+	article p
+	{
+	color:#555554;
+	line-height:115%;
+	margin-bottom:35px;
+	font-size:17px;
+	}
+	
+#mentionsLegales
+{
+position:relative;
+top:110px;
+}
+	
+#mentionsLegales a
+{
+color:white;
+font-family: 'Merienda', cursive;
+font-size:18px;
+margin-left:20px;
+margin-right:75px;
+}
+
+	#mentionsLegales a:hover
+	{
+	text-decoration:none;
+	display:inline-block;
+	padding-bottom:3px;
+	border-bottom:1px solid white;
+	}
+
+#containerHeader>a:first-child
+{
+margin-top:45px;
+margin-bottom:5px;
+display:inline-block;
+
+position:relative;
+top:0px;
+
+-webkit-transition: all 0.4s ;
+-moz-transition: all 0.4s ;
+-ms-transition: all 0.4s ;
+-o-transition: all 0.4s ;
+transition: all 0.4s ;
+}
+	
+#containerHeader>a:first-child:hover
+{
+position:relative;
+top:-5px;
+
+-webkit-transition: all 0.4s ;
+-moz-transition: all 0.4s ;
+-ms-transition: all 0.4s ;
+-o-transition: all 0.4s ;
+transition: all 0.4s ;
+}
+
+#cartBox
+{
+background-image:url("../images/backgroundCart.png");
+width:228px;
+height:131px;
+position:relative;
+top:-20px;
+margin-right:20px;
+padding-left:53px;
+padding-top:34px;
+
+color:#555554;
+font-size:17px;
+}
+
+#floatRightCart
+{
+float:right;
+width:140px;
+}
+
+	#actionCart a
+	{
+	vertical-align:bottom;
+	display:inline-block;
+	width:83px;
+	height:23px;
+	padding-top:16px;
+	text-align:center;
+	background-image:url("../images/iconset.png");
+	background-position:-2px 39px;
+	
+	letter-spacing:0px;
+	
+	-webkit-transition: all 0.4s ;
+	-moz-transition: all 0.4s ;
+	-ms-transition: all 0.4s ;
+	-o-transition: all 0.4s ;
+	transition: all 0.4s ;
+	}
+	
+		#actionCart a:hover
+		{
+		letter-spacing:1px;
+		-webkit-transition: all 0.4s ;
+		-moz-transition: all 0.4s ;
+		-ms-transition: all 0.4s ;
+		-o-transition: all 0.4s ;
+		transition: all 0.4s ;
+		}
+	
+	#actionCart a+a
+	{
+	padding-top:4px;
+	display:inline-block;
+	width:119px;
+	height:24px;
+	text-align:center;
+	background-image:url("../images/iconset.png");
+	background-position:122px -3px;
+	}
+
+#actionCart
+{
+clear:both;
+}
+
+	#actionCart a
+	{
+	color:white;
+	text-decoration:none;
+	}
+
+#cartBox p+p
+{
+font-size:15px;
+margin-top:10px;
+}
+	
+#cart
+{
+text-decoration:none;
+font-size:36px;
+color:#6ca619;
+padding-top:7px;
+padding-left:27px;
+
+display:inline-block;
+width:47px;
+height:76px;
+background-image:url("../images/buttons.png");
+background-position:82px 96px;
+}
+
+	#cart:hover
+	{
+	color:#8adc16;
+	}
+	
+#colissimo
+{
+position:relative;
+left:-2px;
+}
+	
+#colissimo+p
+{
+margin-top:5px;
+margin-bottom:20px;
+}
